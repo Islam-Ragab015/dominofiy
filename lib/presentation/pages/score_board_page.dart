@@ -263,7 +263,7 @@ class _ScoreBoardPageState extends State<ScoreBoardPage> {
             Text(
               '$score',
               style: const TextStyle(
-                color: Colors.orangeAccent,
+                color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
               ),
@@ -277,7 +277,7 @@ class _ScoreBoardPageState extends State<ScoreBoardPage> {
   Widget _roundsCounter(String teamName, int rounds) {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 5),
-      padding: const EdgeInsets.all(16.0),
+      padding: const EdgeInsets.all(5.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
       ),
@@ -311,7 +311,7 @@ class _ScoreBoardPageState extends State<ScoreBoardPage> {
     return Column(
       children: [
         Container(
-          width: 120,
+          width: 140,
           margin: const EdgeInsets.symmetric(vertical: 5),
           decoration: BoxDecoration(
             color: Colors.white.withOpacity(0.05),
@@ -329,6 +329,9 @@ class _ScoreBoardPageState extends State<ScoreBoardPage> {
             keyboardType: TextInputType.number,
             textAlign: TextAlign.center,
           ),
+        ),
+        const SizedBox(
+          height: 10,
         ),
         ElevatedButton.icon(
           onPressed: () {
